@@ -17,6 +17,14 @@ A fully functional job portal built with Laravel 11, Blade, and Tailwind CSS.
 - MySQL
 - Chart.js
 
+- ## Database Setup
+
+```bash
+php artisan migrate
+php artisan db:seed --class=CategorySeeder
+php artisan db:seed --class=AdminSeeder
+```
+
 ## Installation
 
 1. Clone the repo

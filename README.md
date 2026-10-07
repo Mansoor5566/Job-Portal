@@ -24,49 +24,48 @@ A fully functional job portal built with Laravel 11, Blade, and Tailwind CSS.
 php artisan migrate
 php artisan db:seed --class=CategorySeeder
 php artisan db:seed --class=AdminSeeder
-```
-```
+
 
 ## Installation
 
 1. Clone the repo
-\```bash
+
 git clone https://github.com/Mansoor5566/job-portal.git
 cd job-portal
-\```
+
 
 2. Install dependencies
-\```bash
+
 composer install
 npm install
-\```
+
 
 3. Setup environment
-\```bash
+bash
 cp .env.example .env
 php artisan key:generate
-\```
+
 
 4. Configure database in `.env`
-\```
+
 DB_DATABASE=job_db
 DB_USERNAME=root
 DB_PASSWORD=
-\```
+
 
 5. Run migrations and seeders
-\```bash
+bash
 php artisan migrate
 php artisan db:seed --class=CategorySeeder
 php artisan db:seed --class=AdminSeeder
 php artisan storage:link
-\```
+
 
 6. Run the app
-\```bash
+bash
 npm run dev
 php artisan serve
-\```
+
 
 ## Default Admin
 - Email: admin@jobportal.com

@@ -21,7 +21,7 @@ A fully functional job portal built with Laravel 11, Blade, and Tailwind CSS.
 
 1. Clone the repo
 \```bash
-git clone https://github.com/YOUR_USERNAME/job-portal.git
+git clone https://github.com/Mansoor5566/job-portal.git
 cd job-portal
 \```
 

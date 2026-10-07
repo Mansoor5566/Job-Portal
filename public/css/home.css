@@ -1,0 +1,99 @@
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #111827; }
+        a { text-decoration: none; }
+
+        .navbar { background: #fff; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; z-index: 50; }
+        .navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+        .logo { font-size: 20px; font-weight: 700; color: #185FA5; display: flex; align-items: center; gap: 8px; }
+        .nav-links { display: flex; align-items: center; gap: 28px; }
+        .nav-link { font-size: 14px; color: #4b5563; }
+        .nav-link:hover { color: #185FA5; }
+        .btn-primary { background: #185FA5; color: #fff !important; padding: 9px 20px; border-radius: 8px; font-size: 13px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; border: none; cursor: pointer; }
+        .btn-primary:hover { background: #0C447C; }
+        .btn-outline { background: #fff; color: #374151 !important; border: 1px solid #e5e7eb; padding: 9px 20px; border-radius: 8px; font-size: 13px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+        .btn-outline:hover { border-color: #185FA5; color: #185FA5 !important; }
+
+        .hero { background: linear-gradient(135deg, #0C447C 0%, #185FA5 60%, #1e78c8 100%); padding: 80px 1.5rem; }
+        .hero-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 6px 16px; font-size: 12px; color: #bfdbfe; margin-bottom: 20px; }
+        .hero h1 { font-size: 42px; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 16px; }
+        .hero h1 span { color: #93c5fd; }
+        .hero p { font-size: 16px; color: #93c5fd; margin-bottom: 36px; }
+        .search-box { background: #fff; border-radius: 12px; padding: 8px; display: flex; gap: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+        .search-input-wrap { display: flex; align-items: center; flex: 2; gap: 8px; padding: 0 12px; }
+        .search-input-wrap input { border: none; outline: none; font-size: 14px; color: #111827; width: 100%; background: transparent; }
+        .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+        .search-loc-wrap { display: flex; align-items: center; flex: 1; gap: 8px; padding: 0 12px; }
+        .search-loc-wrap input { border: none; outline: none; font-size: 14px; color: #111827; width: 100%; background: transparent; }
+        .hero-stats { display: flex; justify-content: center; gap: 32px; margin-top: 24px; flex-wrap: wrap; }
+        .hero-stat { font-size: 13px; color: #93c5fd; }
+        .hero-stat span { font-weight: 600; color: #fff; }
+
+        .section { max-width: 1200px; margin: 0 auto; padding: 52px 1.5rem 0; }
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .section-title { font-size: 20px; font-weight: 700; color: #111827; }
+        .view-all { font-size: 13px; color: #185FA5; display: flex; align-items: center; gap: 4px; }
+        .view-all:hover { color: #0C447C; }
+
+        .cat-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; margin-bottom: 52px; }
+        .cat-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 16px; text-align: center; transition: all 0.2s; }
+        .cat-card:hover { border-color: #185FA5; transform: translateY(-2px); box-shadow: 0 4px 20px rgba(24,95,165,0.1); }
+        .cat-icon { font-size: 28px; color: #185FA5; margin-bottom: 8px; }
+        .cat-name { font-size: 13px; font-weight: 600; color: #111827; }
+        .cat-count { font-size: 12px; color: #6b7280; margin-top: 3px; }
+
+        .job-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; transition: all 0.2s; margin-bottom: 10px; }
+        .job-card:hover { border-color: #185FA5; box-shadow: 0 4px 20px rgba(24,95,165,0.08); }
+        .job-avatar { width: 48px; height: 48px; border-radius: 10px; background: #eff6ff; border: 1px solid #bfdbfe; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; color: #185FA5; flex-shrink: 0; }
+        .job-info { flex: 1; margin-left: 16px; }
+        .job-title { font-size: 15px; font-weight: 600; color: #111827; display: flex; align-items: center; gap: 8px; }
+        .job-meta { font-size: 13px; color: #6b7280; margin-top: 3px; }
+        .job-tags { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+        .tag { font-size: 11px; padding: 3px 10px; border-radius: 6px; border: 1px solid #e5e7eb; color: #6b7280; }
+        .tag-blue { background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe; }
+        .tag-green { background: #f0fdf4; color: #166534; border-color: #bbf7d0; }
+        .tag-purple { background: #f5f3ff; color: #6d28d9; border-color: #ddd6fe; }
+        .featured-badge { font-size: 10px; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 50px; font-weight: 600; }
+        .job-right { text-align: right; flex-shrink: 0; margin-left: 20px; }
+        .job-salary { font-size: 14px; font-weight: 700; color: #111827; }
+        .job-time { font-size: 12px; color: #9ca3af; margin-top: 3px; }
+        .apply-btn { margin-top: 10px; display: inline-block; background: #185FA5; color: #fff !important; padding: 7px 16px; border-radius: 8px; font-size: 12px; font-weight: 500; }
+        .apply-btn:hover { background: #0C447C; }
+
+        .cta-section { background: linear-gradient(135deg, #0C447C, #185FA5); margin: 52px 0 0; padding: 60px 1.5rem; text-align: center; }
+        .cta-section h2 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+        .cta-section p { font-size: 15px; color: #93c5fd; margin-bottom: 28px; }
+        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn-white { background: #fff; color: #185FA5 !important; padding: 11px 28px; border-radius: 8px; font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+        .btn-white:hover { background: #f0f9ff; }
+        .btn-ghost { background: rgba(255,255,255,0.1); color: #fff !important; border: 1px solid rgba(255,255,255,0.3); padding: 11px 28px; border-radius: 8px; font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+        .btn-ghost:hover { background: rgba(255,255,255,0.2); }
+
+        footer { background: #0f172a; padding: 40px 1.5rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+        .footer-logo { font-size: 18px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px; }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-link { font-size: 13px; color: #94a3b8; }
+        .footer-link:hover { color: #fff; }
+        .footer-copy { font-size: 12px; color: #475569; }
+
+        .hamburger-nav { display: none; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger-nav { display: flex; align-items: center; gap: 12px; }
+            .hero h1 { font-size: 28px; }
+            .search-box { flex-direction: column; }
+            .search-divider { width: 100%; height: 1px; margin: 0; }
+            .cat-grid { grid-template-columns: repeat(2,1fr); }
+            .job-card { flex-direction: column; align-items: flex-start; }
+            .job-right { text-align: left; margin-left: 0; margin-top: 12px; }
+            .hero-stats { gap: 16px; }
+            .footer-inner { flex-direction: column; text-align: center; }
+            .footer-links { flex-wrap: wrap; justify-content: center; }
+        }
+        @media (max-width: 480px) {
+            .cat-grid { grid-template-columns: repeat(2,1fr); }
+            .hero { padding: 48px 1rem; }
+            .section { padding: 32px 1rem 0; }
+        }
